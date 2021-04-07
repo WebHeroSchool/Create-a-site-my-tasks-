@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Мой первый сайт</title>
-        <link rel="stylesheet" href="fonts.css">
-     	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мой первый сайт</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrapper">	
+  <div class="wrapper"> 
   <header>
-  	<div class="logo movingLogo">
+    <div class="logo movingLogo">
     <div class="logo__circle logo__circle_dark-blue"></div>
-    <div class="logo__circle logo__circle_blue"></div>app.creation</div><!--
-    -->	<nav class="menu"><!--
-		--><a class="menu__item1" href="#">start</a><!--
-		--><a class="menu__item2 menu__item_active" href="#">services</a><!--
-		--><a class="menu__item3" href="#">about</a><!--
-		--><a class="menu__item4" href="#">blog</a><!--
-		--><a class="menu__item5" href="#">contact us</a>
-	</nav>
+    <div class="logo__circle logo__circle_blue"></div>
+    <div class="logo__name">app.creation</div>
+    </div><!--
+    --><nav class="menu"><!--
+    --><a class="menu__item1" href="#">start</a><!--
+    --><a class="menu__item2 menu__item_active" href="#">services</a><!--
+    --><a class="menu__item3" href="#">about</a><!--
+    --><a class="menu__item4" href="#">blog</a><!--
+    --><a class="menu__item5" href="#">contact us</a>
+       </nav>
+       <div class="menu-burger">
+         <input id="menu-burger__toggle" type="checkbox" />
+         <label class="menu-burger__button" for="menu-burger__toggle">
+         <span></span>
+         </label>
+       <div class="menu-mobile">
+         <div class="menu-mobile__item">start</div>
+         <div class="menu-mobile__item">services</div>
+         <div class="menu-mobile__item">about</div>
+         <div class="menu-mobile__item">blog</div>
+         <div class="menu-mobile__item">contact us</div>
+       </div>
+       </div>
   </header>
   <section class="main">
-    		<h1 class="main__title">Building an App<span class="main__title-text-highlight"> Without Design Expertise?</span></h1>
-     		<p class="main__subtitle">I help tech startups design better digital products without hiring a full-time designer</p>
-     		<button class="main__button" type="button" name="button">Schedule free consultation</button>
+    <h1 class="main__title">Building an App<span class="main__title-text-highlight"> Without Design Expertise?</span></h1>
+    <p class="main__subtitle">I help tech startups design better digital products without hiring a&nbsp;full-&nbsp;time designer</p>
+    <button class="main__button" type="button" name="button">Schedule free consultation</button>
   </section>
-  <div class="points">
-    <div class="points__item"></div>
-    <div class="points__item"></div>
-    <div class="points__item"></div>
-  </div>	
+    <div class="points">
+      <div class="points__item"></div>
+      <div class="points__item"></div>
+      <div class="points__item"></div>
+    </div>	
 </body>
 </html>
