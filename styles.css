@@ -31,7 +31,8 @@ label {
   display: none;
 }
 
-.logo, .menu {
+.logo, 
+.menu {
   display: inline-block;
 }
 
@@ -54,7 +55,7 @@ label {
 }
 
 .logo__circle_dark-blue {
-  background: #0056EC;
+  background: #0056ec;
 }
 
 .logo__circle_blue {
@@ -65,7 +66,7 @@ label {
 
 .menu {
   font: normal 500 18px/21px 'Roboto', sans-serif;
-  margin-right: 12px;
+  margin-right: 1%;
 }
 
 .menu__item1 {
@@ -84,7 +85,8 @@ label {
   transition: opacity .5s;
 }
 
-.menu__item3, .menu__item4 {
+.menu__item3, 
+.menu__item4 {
   position: relative;
   margin-right: 27px;
   color: #000;
@@ -109,12 +111,20 @@ label {
   background: #0056EC;
 }
 
-.menu__item1:hover, .menu__item2:hover, .menu__item3:hover, .menu__item4:hover, .menu__item5:hover {
+.menu__item1:hover, 
+.menu__item2:hover, 
+.menu__item3:hover, 
+.menu__item4:hover, 
+.menu__item5:hover {
   font-weight: bold;
   opacity: .5;
 }
 
-.menu__item1:hover:after, .menu__item2:hover:after, .menu__item3:hover:after, .menu__item4:hover:after, .menu__item5:hover:after {
+.menu__item1:hover:after, 
+.menu__item2:hover:after, 
+.menu__item3:hover:after, 
+.menu__item4:hover:after, 
+.menu__item5:hover:after {
   position: absolute;
   display: block;
   content: '';
@@ -124,7 +134,11 @@ label {
   background: #0056EC;
 }
 
-.menu__item1:after, .menu__item2:after, .menu__item3:after, .menu__item4:after, .menu__item5:after {
+.menu__item1:after, 
+.menu__item2:after, 
+.menu__item3:after, 
+.menu__item4:after, 
+.menu__item5:after {
   position: absolute;
   display: block;
   content: '';
@@ -136,7 +150,12 @@ label {
   transition: opacity .5s, width .5s;
 }
 
-.menu__item1:hover:after, .menu__item2:hover:after, .menu__item3:hover:after, .menu__item4:hover:after, .menu__item5:hover:after, .menu__item_active:after {
+.menu__item1:hover:after, 
+.menu__item2:hover:after, 
+.menu__item3:hover:after, 
+.menu__item4:hover:after, 
+.menu__item5:hover:after, 
+.menu__item_active:after {
   opacity: 1;
   width: 100%;
 }
@@ -172,7 +191,7 @@ label {
   font: normal 500 18px/21px 'Roboto', sans-serif;
   background: #0056EC;
   border-radius: 4px;
-  color: #FFF;
+  color: #fff;
   transition: opacity .5s;
 }
 
@@ -180,6 +199,7 @@ label {
   opacity: .5;
   font-weight: bold;
 }
+
 .points {
   display: flex;
   justify-content: left;
@@ -201,23 +221,26 @@ label {
   animation-name: movingLogo;
   animation-duration: 2s; 
   animation-timing-function: ease-in-out; 
-  visibility: visible !important;
+  visibility: visible;
   transition: opacity .5s
  }
  
 @keyframes movingLogo {
   0% {
     transform: scale(0);
-    opacity: .0;       
+    opacity: .0;
   }
+  
   60% {
     transform: scale(1.1);
     opacity: .5; 
   }
+ 
   80% {
     transform: scale( .9);
     opacity: .7; 
   }   
+  
   100% {
     transform: scale(1);
     opacity: 1; 
@@ -229,50 +252,63 @@ label {
     width: 69%;
 	  margin: auto;
   }
+  
   header {
     padding-bottom: 34px;
 	  margin: 0;
   }
+  
   .menu-mobile {
     display: none;
   }
+  
   #menu__toggle {
     display: none;
   }
+  
   .menu-burger {
     display: none;
   }
+  
   label {
     display: none;
   }
+  
   .logo {
     font: bold 24px/32px 'PT serif', sans-serif;
     letter-spacing: 1px;
   }
+  
   .menu {
     font: normal 500 14px/16px 'Roboto', sans-serif;
     margin-right: 12px;
   }
+  
   .main {
 	  background-size: 56%;
 	  padding: 0 54% 68px 9px;
   }
+  
   .main__title {
 	  font: normal bold 50px/66px 'PT Serif', serif;
 	  padding-top: 25px;
 	  letter-spacing: 1.5px;
   }
+  
   .main__subtitle {
 	  font: normal 500 18px/21px 'Roboto', sans-serif;
 	  padding-right: 10%;
   }
+  
   .main__button {
 	  font: normal 500 14px/16px 'Roboto', sans-serif;
 	  padding: 15px 28px 14px 13px;
     margin-top: 2px;
   }
+  
   .points {
 	  margin-top: 77px;
+    margin-left: 48%;
   }
 }
 
@@ -280,49 +316,62 @@ label {
   .wrapper {
 	  width: 92%;
 	}
-	header {
+	
+  header {
 		padding-bottom: 34px;
 		margin: 0;
 	}
-	.menu-mobile {
+	
+  .menu-mobile {
 		display: none;
 	}
-	#menu__toggle {
+	
+  #menu__toggle {
 		display: none;
 	}
-	.menu-burger {
+	
+  .menu-burger {
 		display: none;
 	}
-	label {
+	
+  label {
 	  display: none;
 	}
-	.logo {
+	
+  .logo {
 		font: bold 24px/32px 'PT serif', sans-serif;
 		letter-spacing: 1px;
 	}
-		.menu {
+	
+  .menu {
 		font: normal 500 14px/16px 'Roboto', sans-serif;
 	}
-	.main {
+	
+  .main {
 		background-size: 56%;
 		padding: 0 54% 68px 9px;
 	}
-	.main__title {
+	
+  .main__title {
 	  font: normal bold 50px/66px 'PT Serif', serif;
 	  padding-top: 25px;
 	  letter-spacing: 1.5px;
 	}
-	.main__subtitle {
+	
+  .main__subtitle {
 	  font: normal 500 18px/21px 'Roboto', sans-serif;
 	  padding-right: 10%;
 	}
-	.main__button {
+	
+  .main__button {
 	  font: normal 500 14px/16px 'Roboto', sans-serif;
 	  padding: 15px 28px 14px 13px;
     margin-top: 2px;
 	}
-	.points {
+	
+  .points {
 		margin-top: 77px;
+    margin-left: 48%;
 	}
 }
 
@@ -330,37 +379,45 @@ label {
   .wrapper {
 	  width: 87%;
 	}
-	header {
+	
+  header {
 	  padding: 0;
 		margin: 0;
 		margin-top: 6px;
 	}
-	.menu {
+	
+  .menu {
 		display: none;
 	}
-	.menu-burger {
+	
+  .menu-burger {
 		display: block;
 	}
-	.menu-mobile__item {
+	
+  .menu-mobile__item {
 		font: normal 500 30px/35px 'Roboto', sans-serif;
 		text-align: center;
 		padding-bottom: 25px;
 		padding-left: 0;
 	}
-	.main {
+	
+  .main {
 	  padding: 80% 0 0 0;
 		background-size: 85%;
 		background-position: top center;
 		text-align: center;
 		margin-top: 14px;
 	}
-	.logo {
+	
+  .logo {
 	  padding: 0 0 68px 50px;
 	}
-	.logo__name {
+	
+  .logo__name {
 		display: none;
 	}
-	.main__title {
+	
+  .main__title {
 	  font: normal bold 30px/40px 'PT Serif', serif;
 		text-align: center;
 		padding-top: 0;
@@ -369,7 +426,8 @@ label {
     padding-right: 0px;
     padding-left: 10px;		
 	}
-	.main__subtitle {
+	
+  .main__subtitle {
 		font: normal 500 16px/19px 'Roboto', sans-serif;
 		text-align: center;
 		padding-top: 29px;
@@ -379,22 +437,27 @@ label {
     margin: 0 auto;
     letter-spacing: 0;
 	}
-	.main__button {
+	
+  .main__button {
 		font: normal 500 14px/16px 'Roboto', sans-serif;
 		text-align: center;
 		margin-top: 25px;
 		padding: 13px 26px 11px 18px;
 	}
-	.points {
+	
+  .points {
 		display: none;
 	}
-	#menu-burger__toggle {
+	
+  #menu-burger__toggle {
     display: none;
 	}
-	.menu-mobile {
+	
+  .menu-mobile {
 		display: none;	
 	}
-	.menu-burger__button {
+	
+  .menu-burger__button {
  	  display: flex;
  		align-items: center;
   	position: absolute;
@@ -405,7 +468,8 @@ label {
   	cursor: pointer;
   	z-index: 1;
 	}
-	.menu-burger__button > span,
+	
+  .menu-burger__button > span,
 	.menu-burger__button > span::before,
 	.menu-burger__button > span::after {
     display: block;
@@ -415,15 +479,18 @@ label {
   	background-color: #0056EC;
   	transition-duration: .5s;
 	}
-	.menu-burger__button > span::before {
+	
+  .menu-burger__button > span::before {
   	content: '';
   	top: -8px;
 	}
-	.menu-burger__button > span::after {
+	
+  .menu-burger__button > span::after {
   	content: '';
   	top: 8px;
 	}
-	#menu-burger__toggle:checked ~ .menu-mobile {
+	
+  #menu-burger__toggle:checked ~ .menu-mobile {
 		position: absolute;
 		width: 100%;
 		top: 0;
@@ -434,24 +501,29 @@ label {
 		padding-top: 50%;
 		padding-bottom: 160px;
 	}
-	#menu-burger__toggle:checked ~ .menu-mobile__item {
+	
+  #menu-burger__toggle:checked ~ .menu-mobile__item {
 		text-align: center;
 		font: normal 500 30px/35px 'Roboto', sans-serif;
 		padding-bottom: 24px;
 		padding-left: 24px;
 	}
-	#menu-burger__toggle:checked ~ .menu-burger__button > span {
+	
+  #menu-burger__toggle:checked ~ .menu-burger__button > span {
     transform: rotate(45deg);
 	}
-	#menu-burger__toggle:checked ~ .menu-burger__button > span::before {
+	
+  #menu-burger__toggle:checked ~ .menu-burger__button > span::before {
   	top: 0;
   	transform: rotate(0);
 	}
-	#menu-burger__toggle:checked ~ .menu-burger__button > span::after {
+	
+  #menu-burger__toggle:checked ~ .menu-burger__button > span::after {
   	top: 0;
   	transform: rotate(90deg);
 	}
-	#menu-burger__toggle:checked ~ .menu-mobile {
+	
+  #menu-burger__toggle:checked ~ .menu-mobile {
   	display: block;
   	left: 0;
 	}
