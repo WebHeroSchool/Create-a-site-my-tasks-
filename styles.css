@@ -67,6 +67,7 @@ label {
 .menu {
   font: normal 500 18px/21px 'Roboto', sans-serif;
   margin-right: 1%;
+  margin-top: 6px;
 }
 
 .menu__item1 {
@@ -88,7 +89,7 @@ label {
 .menu__item3, 
 .menu__item4 {
   position: relative;
-  margin-right: 27px;
+  margin-right: 25px;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -175,7 +176,7 @@ label {
 }
 
 .main__title-text-highlight {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ECF3FF 15%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ecf3ff 15%);
 }
 
 .main__subtitle {
