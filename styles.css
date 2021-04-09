@@ -22,7 +22,7 @@ header {
 #menu__toggle {
   display: none;
 }
-  
+
 .menu-burger {
   display: none;
 }
@@ -31,7 +31,7 @@ label {
   display: none;
 }
 
-.logo, 
+.logo,
 .menu {
   display: inline-block;
 }
@@ -51,7 +51,7 @@ label {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .logo__circle_dark-blue {
@@ -61,7 +61,7 @@ label {
 .logo__circle_blue {
   left: 8px;
   top: 56%;
-  background: #C8DBFB;
+  background: #c8dbfb;
 }
 
 .menu {
@@ -75,7 +75,7 @@ label {
   margin-right: 27px;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .menu__item2 {
@@ -83,23 +83,23 @@ label {
   margin-right: 24px;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
-.menu__item3, 
+.menu__item3,
 .menu__item4 {
   position: relative;
   margin-right: 25px;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .menu__item5 {
   position: relative;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .menu__item_active:after {
@@ -109,23 +109,23 @@ label {
   width: 100%;
   height: 3px;
   left: 0;
-  background: #0056EC;
+  background: #0056ec;
 }
 
-.menu__item1:hover, 
-.menu__item2:hover, 
-.menu__item3:hover, 
-.menu__item4:hover, 
+.menu__item1:hover,
+.menu__item2:hover,
+.menu__item3:hover,
+.menu__item4:hover,
 .menu__item5:hover {
   font-weight: bold;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.menu__item1:hover:after, 
-.menu__item2:hover:after, 
-.menu__item3:hover:after, 
-.menu__item4:hover:after, 
-.menu__item5:hover:after {
+.menu__item1:hover::after,
+.menu__item2:hover::after,
+.menu__item3:hover::after,
+.menu__item4:hover::after,
+.menu__item5:hover::after {
   position: absolute;
   display: block;
   content: '';
@@ -135,11 +135,11 @@ label {
   background: #0056EC;
 }
 
-.menu__item1:after, 
-.menu__item2:after, 
-.menu__item3:after, 
-.menu__item4:after, 
-.menu__item5:after {
+.menu__item1::after,
+.menu__item2::after,
+.menu__item3::after,
+.menu__item4::after,
+.menu__item5::after {
   position: absolute;
   display: block;
   content: '';
@@ -148,15 +148,15 @@ label {
   left: 0;
   background: #0056EC;
   opacity: 0;
-  transition: opacity .5s, width .5s;
+  transition: opacity 0.5s, width 0.5s;
 }
 
-.menu__item1:hover:after, 
-.menu__item2:hover:after, 
-.menu__item3:hover:after, 
-.menu__item4:hover:after, 
-.menu__item5:hover:after, 
-.menu__item_active:after {
+.menu__item1:hover::after,
+.menu__item2:hover::after,
+.menu__item3:hover::after,
+.menu__item4:hover::after,
+.menu__item5:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
@@ -193,11 +193,11 @@ label {
   background: #0056EC;
   border-radius: 4px;
   color: #fff;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .main__button:hover {
-  opacity: .5;
+  opacity: 0.5;
   font-weight: bold;
 }
 
@@ -206,6 +206,7 @@ label {
   justify-content: left;
   align-items: center;
   margin-left: 49%;
+  padding-bottom: 20px;
 }
 
 .points__item {
@@ -213,50 +214,50 @@ label {
   height: 8px;
   background: #C8DBFB;
   margin-right: 4px;
-  opacity: .7;
+  opacity: 0.7;
   border-radius: 50%;
   display: inline-block;
 }
 
 .movingLogo {
   animation-name: movingLogo;
-  animation-duration: 2s; 
-  animation-timing-function: ease-in-out; 
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   visibility: visible;
-  transition: opacity .5s
- }
+  transition: opacity 0.5s
+}
  
 @keyframes movingLogo {
   0% {
     transform: scale(0);
-    opacity: .0;
+    opacity: 0;
   }
   
   60% {
     transform: scale(1.1);
-    opacity: .5; 
+    opacity: 0.5;
   }
  
   80% {
-    transform: scale( .9);
-    opacity: .7; 
-  }   
+    transform: scale( 0.9);
+    opacity: 0.7;
+  }
   
   100% {
     transform: scale(1);
-    opacity: 1; 
-  }       
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
   .wrapper {
     width: 69%;
-	  margin: auto;
+    margin: auto;
   }
   
   header {
     padding-bottom: 34px;
-	  margin: 0;
+    margin: 0;
   }
   
   .menu-mobile {
@@ -379,12 +380,13 @@ label {
 @media (max-width: 768px) {
   .wrapper {
 	  width: 87%;
+    height: 100%;
 	}
 	
   header {
-	  padding: 0;
-		margin: 0;
-		margin-top: 6px;
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
 	}
 	
   .menu {
@@ -393,6 +395,7 @@ label {
 	
   .menu-burger {
 		display: block;
+    height: 100%;
 	}
 	
   .menu-mobile__item {
@@ -455,31 +458,31 @@ label {
 	}
 	
   .menu-mobile {
-		display: none;	
-	}
+		display: none;
+  }
 	
   .menu-burger__button {
- 	  display: flex;
- 		align-items: center;
-  	position: absolute;
- 		top: 32px;
-  	left: 87%;
-  	width: 25px;
-  	height: 17px;
-  	cursor: pointer;
-  	z-index: 1;
-	}
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 32px;
+    left: 87%;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+    z-index: 1;
+  }
 	
   .menu-burger__button > span,
-	.menu-burger__button > span::before,
-	.menu-burger__button > span::after {
+  .menu-burger__button > span::before,
+  .menu-burger__button > span::after {
     display: block;
-  	position: absolute;
- 		width: 100%;
-  	height: 2px;
-  	background-color: #0056EC;
-  	transition-duration: .5s;
-	}
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    transition-duration: 0.5s;
+  }
 	
   .menu-burger__button > span::before {
   	content: '';
@@ -496,17 +499,17 @@ label {
 		width: 100%;
 		top: 0;
 		left: 0;
-		height: 100%;
+		height: max-content;
 		display: block;
 		background: white;
 		padding-top: 50%;
-		padding-bottom: 160px;
+		padding-bottom: 45%;
 	}
 	
   #menu-burger__toggle:checked ~ .menu-mobile__item {
 		text-align: center;
 		font: normal 500 30px/35px 'Roboto', sans-serif;
-		padding-bottom: 24px;
+		height: 100%;
 		padding-left: 24px;
 	}
 	
