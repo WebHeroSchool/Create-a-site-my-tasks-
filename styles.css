@@ -102,7 +102,7 @@ label {
   transition: opacity 0.5s;
 }
 
-.menu__item_active:after {
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: '';
@@ -132,7 +132,7 @@ label {
   width: 100%;
   height: 3px;
   left: 0;
-  background: #0056EC;
+  background: #0056ec;
 }
 
 .menu__item1::after,
@@ -176,7 +176,7 @@ label {
 }
 
 .main__title-text-highlight {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ecf3ff 15%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
 }
 
 .main__subtitle {
@@ -212,7 +212,7 @@ label {
 .points__item {
   width: 8px;
   height: 8px;
-  background: #C8DBFB;
+  background: #c8dbfb;
   margin-right: 4px;
   opacity: 0.7;
   border-radius: 50%;
@@ -224,9 +224,9 @@ label {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   visibility: visible;
-  transition: opacity 0.5s
+  transition: opacity 0.5s;
 }
- 
+
 @keyframes movingLogo {
   0% {
     transform: scale(0);
@@ -239,7 +239,7 @@ label {
   }
  
   80% {
-    transform: scale( 0.9);
+    transform: scale(0.9);
     opacity: 0.7;
   }
   
@@ -287,99 +287,99 @@ label {
   }
   
   .main {
-	  background-size: 56%;
-	  padding: 0 54% 68px 9px;
+    background-size: 56%;
+    padding: 0 54% 68px 9px;
   }
   
   .main__title {
-	  font: normal bold 50px/66px 'PT Serif', serif;
-	  padding-top: 25px;
-	  letter-spacing: 1.5px;
+    font: normal bold 50px/66px 'PT Serif', serif;
+    padding-top: 25px;
+    letter-spacing: 1.5px;
   }
   
   .main__subtitle {
-	  font: normal 500 18px/21px 'Roboto', sans-serif;
-	  padding-right: 10%;
+    font: normal 500 18px/21px 'Roboto', sans-serif;
+    padding-right: 10%;
   }
   
   .main__button {
-	  font: normal 500 14px/16px 'Roboto', sans-serif;
-	  padding: 15px 28px 14px 13px;
+    font: normal 500 14px/16px 'Roboto', sans-serif;
+    padding: 15px 28px 14px 13px;
     margin-top: 2px;
   }
   
   .points {
-	  margin-top: 77px;
+    margin-top: 77px;
     margin-left: 48%;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .wrapper {
-	  width: 92%;
-	}
+    width: 92%;
+  }
 	
   header {
-		padding-bottom: 34px;
-		margin: 0;
+    padding-bottom: 34px;
+    margin: 0;
 	}
 	
   .menu-mobile {
-		display: none;
+    display: none;
 	}
 	
   #menu__toggle {
-		display: none;
+    display: none;
 	}
 	
   .menu-burger {
-		display: none;
+    display: none;
 	}
 	
   label {
-	  display: none;
+    display: none;
 	}
 	
   .logo {
-		font: bold 24px/32px 'PT serif', sans-serif;
-		letter-spacing: 1px;
+    font: bold 24px/32px 'PT serif', sans-serif;
+    letter-spacing: 1px;
 	}
 	
   .menu {
-		font: normal 500 14px/16px 'Roboto', sans-serif;
+    font: normal 500 14px/16px 'Roboto', sans-serif;
 	}
 	
   .main {
-		background-size: 56%;
-		padding: 0 54% 68px 9px;
+    background-size: 56%;
+    padding: 0 54% 68px 9px;
 	}
 	
   .main__title {
-	  font: normal bold 50px/66px 'PT Serif', serif;
-	  padding-top: 25px;
-	  letter-spacing: 1.5px;
+    font: normal bold 50px/66px 'PT Serif', serif;
+    padding-top: 25px;
+    letter-spacing: 1.5px;
 	}
 	
   .main__subtitle {
-	  font: normal 500 18px/21px 'Roboto', sans-serif;
-	  padding-right: 10%;
+    font: normal 500 18px/21px 'Roboto', sans-serif;
+    padding-right: 10%;
 	}
 	
   .main__button {
-	  font: normal 500 14px/16px 'Roboto', sans-serif;
-	  padding: 15px 28px 14px 13px;
+    font: normal 500 14px/16px 'Roboto', sans-serif;
+    padding: 15px 28px 14px 13px;
     margin-top: 2px;
 	}
 	
   .points {
-		margin-top: 77px;
+    margin-top: 77px;
     margin-left: 48%;
 	}
 }
 
 @media (max-width: 768px) {
   .wrapper {
-	  width: 87%;
+    width: 87%;
     height: 100%;
 	}
 	
@@ -390,53 +390,53 @@ label {
 	}
 	
   .menu {
-		display: none;
+    display: none;
 	}
 	
   .menu-burger {
-		display: block;
+    display: block;
     height: 100%;
 	}
 	
   .menu-mobile__item {
-		font: normal 500 30px/35px 'Roboto', sans-serif;
-		text-align: center;
-		padding-bottom: 25px;
-		padding-left: 0;
+    font: normal 500 30px/35px 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-left: 0;
 	}
 	
   .main {
-	  padding: 80% 0 0 0;
-		background-size: 85%;
-		background-position: top center;
-		text-align: center;
-		margin-top: 14px;
+    padding: 80% 0 0 0;
+    background-size: 85%;
+    background-position: top center;
+    text-align: center;
+    margin-top: 14px;
 	}
 	
   .logo {
-	  padding: 0 0 68px 50px;
+    padding: 0 0 68px 50px;
 	}
 	
   .logo__name {
-		display: none;
+    display: none;
 	}
 	
   .main__title {
-	  font: normal bold 30px/40px 'PT Serif', serif;
-		text-align: center;
-		padding-top: 0;
-		margin: 0;
-		letter-spacing: 1.5px;
-    padding-right: 0px;
-    padding-left: 10px;		
-	}
+    font: normal bold 30px/40px 'PT Serif', serif;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    letter-spacing: 1.5px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
 	
   .main__subtitle {
-		font: normal 500 16px/19px 'Roboto', sans-serif;
-		text-align: center;
-		padding-top: 29px;
-		margin-bottom: 40px;
-		padding-right: 0;
+    font: normal 500 16px/19px 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 29px;
+    margin-bottom: 40px;
+    padding-right: 0;
     max-width: 270px;
     margin: 0 auto;
     letter-spacing: 0;
